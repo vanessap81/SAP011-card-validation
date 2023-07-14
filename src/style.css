@@ -14,6 +14,7 @@ header {
     height: 50px;
     background-color: #FFB84C;
     position: fixed;
+    top: 0;
 }
 
 nav {
@@ -72,8 +73,51 @@ nav {
 }
 
 main {
-    height: 1200px;
+    height: 700px;
+    margin-top: 60px;
 }
+
+#card-exemple-container {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* border: solid 2px red; */
+}
+
+#card-exemple-container h3 {
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #A459D1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#card {
+    width: 300px;
+    height: 189px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #F16767;
+    box-shadow: 10px 8px 5px #578384;
+}
+
+#input-container {
+    width: 300px;
+    height: 260px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 20px;
+    border: solid 2px red;
+}
+
+
+
 
 footer {
     height: 110px;
