@@ -36,11 +36,34 @@
 
       <div class="container" id="input-container">
         <form action="">
-          <label for="cliente-name">Nome do titular do cartão </label><br>
-          <input type="text" id="cliente-name" name="Name">
+          <fieldset>
+            <legend>Dados do cartão</legend>
 
+            <div class="input-div">
+              <label for="clientName">Nome do titular do cartão</label>
+              <input type="text" name="name" id="clientName">
+            </div>
 
-          <label for=""></label>
+            <div class="input-div">
+              <label for="cardNumber">Número do cartão</label>
+              <input type="number" name="card" id="cardNumber">
+            </div>
+
+            <div class="input-div">
+              <label for="cardDate">Data de validade</label>
+              <input type="date" name="date" id="cardDate">
+            </div>
+
+            <div class="input-div">
+              <label for="cardDigit">Dígito verificador</label>
+              <input type="number" name="digit" id="cardDigit">
+            </div>
+
+            <div class="input-div" id="button-div">
+              <button type="submit">Enviar dados</button>
+            </div>
+          </fieldset>
+
         </form>
       </div>
 
@@ -49,8 +72,17 @@
   </main>
 
   <footer>
-    <div class="footer-container" id="footer-links"></div>
-    <div class="footer-container" id="footer-logo"></div>
+    <div class="footer-container" id="footer-links">
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">quem somos</a></li>
+        <li><a href="">produtos</a></li>
+        <li><a href="">blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-container" id="footer-logo">
+      <img src="./img/duck-logo.png" alt="footer-duck">
+    </div>
     <div class="footer-container" id="footer-network"></div>
   </footer>
 

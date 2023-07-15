@@ -4,9 +4,9 @@
 
 body {
     width: 1366px;
-    height: 768px;
-    margin: 0;
-    background-color: #F5EAEA;
+    /* height: 768px; */
+    margin: auto;
+    background-color: #fff;
 }
 
 header {
@@ -73,8 +73,9 @@ nav {
 }
 
 main {
-    height: 700px;
-    margin-top: 60px;
+    height: 740px;
+    margin-top: 50px;
+    background-color: #e8d5d5;
 }
 
 #card-exemple-container {
@@ -83,7 +84,6 @@ main {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    /* border: solid 2px red; */
 }
 
 #card-exemple-container h3 {
@@ -100,26 +100,97 @@ main {
 #card {
     width: 300px;
     height: 189px;
-    border-radius: 25px;
+    border-radius: 22px;
     margin-bottom: 25px;
     background-color: #F16767;
-    box-shadow: 10px 8px 5px #578384;
+    box-shadow: 8px 8px 5px #578384;
 }
 
 #input-container {
     width: 300px;
-    height: 260px;
+    /* height: 260px; */
     display: flex;
     justify-content: start;
     flex-direction: column;
+    border-radius: 10px;
     margin-top: 20px;
-    border: solid 2px red;
+    background-color: #e8d5d5;
+    /* box-shadow: 10px 8px 5px #578384; */
 }
 
+#input-container form fieldset {
+    border-radius: 10px;
+    background-color: #F5EAEA;
+}
 
+#input-container form fieldset legend {
+    font-weight: bold;
+    font-size: 1.1em;
+}
 
+#input-container form fieldset .input-div {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#input-container form fieldset .input-div input {
+    width: 260px;
+    height: 26px;
+    /* border-radius: 5px; */
+    box-shadow: none;
+}
+
+#input-container form fieldset #button-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+fieldset #button-div button {
+    height: 26px;
+}
 
 footer {
     height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #A459D1;
+}
+
+footer .footer-container {
+    width: 260px;
+    height: 100px;
+}
+
+#footer-links ul {
+    margin-left: 30px;
+}
+
+#footer-links li {
+    list-style-type: none;
+}
+
+#footer-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #fff;
+}
+
+#footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#footer-logo img {
+    height: 40px;
+}
+
+#footer-network {
+    border: solid 2px #000;
 }
