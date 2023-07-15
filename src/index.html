@@ -41,22 +41,32 @@
 
             <div class="input-div">
               <label for="clientName">Nome do titular do cartão</label>
-              <input type="text" name="name" id="clientName">
+              <input type="text" required placeholder="Titular do cartão" autocomplete="off" name="name"
+                id="clientName">
             </div>
 
-            <div class="input-div">
+            <div class="input-div" id="cardNumberContainer">
               <label for="cardNumber">Número do cartão</label>
-              <input type="number" name="card" id="cardNumber">
+              <input type="text" required autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000"
+                name="number" id="cardNumber">
+
+              <div hidden id="cardInfo">
+                <p>teste</p>
+              </div>
+
             </div>
 
-            <div class="input-div">
-              <label for="cardDate">Data de validade</label>
-              <input type="date" name="date" id="cardDate">
+            <div class="input-div" id="cardDate-div">
+              <label for="cardDate">Validade</label><br>
+              <input type="text" autocomplete="off" maxlength="2" placeholder="mm" name="month" id="cardMonth"
+                class="cardDate">
+              <input type="text" autocomplete="off" maxlength="4" placeholder="aaaa" name="year" id="cardYear"
+                class="cardDate">
             </div>
 
-            <div class="input-div">
-              <label for="cardDigit">Dígito verificador</label>
-              <input type="number" name="digit" id="cardDigit">
+            <div class="input-div" id="cardDigit-div">
+              <label for="cardDigit">CCV</label><br>
+              <input type="number" autocomplete="off" maxlength="3" name="digit" id="cardDigit">
             </div>
 
             <div class="input-div" id="button-div">

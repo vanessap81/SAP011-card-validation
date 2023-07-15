@@ -102,7 +102,7 @@ main {
     height: 189px;
     border-radius: 22px;
     margin-bottom: 25px;
-    background-color: #F16767;
+    background-color: #f58989;
     box-shadow: 8px 8px 5px #578384;
 }
 
@@ -130,7 +130,7 @@ main {
 
 #input-container form fieldset .input-div {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #input-container form fieldset .input-div input {
@@ -140,6 +140,41 @@ main {
     box-shadow: none;
 }
 
+#input-container form fieldset .input-div #cardMonth {
+    width: 40px;
+    margin-right: 5px;
+}
+
+#input-container form fieldset .input-div #cardYear {
+    width: 60px;
+}
+
+#input-container form fieldset .input-div #cardDigit {
+    width: 60px;
+}
+
+/* CONFIGURAÇÃO DA DIV DE AVISO DE CARTÃO VÁLIDO */
+
+/* #input-container form fieldset #cardNumberContainer {
+    margin-bottom: 15px;
+} */
+
+form fieldset #cardInfo {
+    width: 180px;
+    height: 22pxpx;
+    margin: auto;
+    /* border: solid 1px blue; */
+}
+
+form fieldset #cardInfo p {
+    text-align: center;
+    height: 16pxpx;
+    font-size: 0.8em;
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* BUTTON */
 #input-container form fieldset #button-div {
     display: flex;
     justify-content: center;
@@ -184,7 +219,7 @@ footer .footer-container {
 #footer-logo {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
 #footer-logo img {
