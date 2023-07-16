@@ -3,31 +3,36 @@ import validator from './validator.js';
 console.log(validator);
 
 
-let inputDoCartao = document.getElementById("cardNumber");
 
 
-function checkData() {
 
-    if (inputDoCartao.value == "") {
-        alert("Numero não informado");
-    } if (inputDoCartao.value.length > 0 && inputDoCartao.value.length < 16) {
-        alert("Este campo precisa ter 16 números");
-    } if (inputDoCartao.value.length == 16) {
-        console.log("Quantidade de números certa");
-    } else {
-        console.log("Números digitados");
-    }
-};
 
-// executa função quando o elemento perde o foco
+
+
+const inputDoCartao = document.getElementById("cardNumber");
+
+
 inputDoCartao.onblur = function () {
 
-    checkData();
+    let numeroDoCartao;
 
-    let dadosDoCartao;
-    dadosDoCartao = document.getElementById("cardNumber").value;
+    if (inputDoCartao.value.length == 16) {
+        numeroDoCartao = inputDoCartao.value;
 
-    console.log(dadosDoCartao);
+    } else {
+        alert("Este campo precisa ter 16 números");
+    };
+
+    // console.log(numeroDoCartao);
+
+
+
+    for (let i = 0; i <= 16; i++) {
+
+
+    }
+
+
 };
 
 
