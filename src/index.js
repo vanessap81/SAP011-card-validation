@@ -11,8 +11,7 @@ console.log(validator);
 //acessar o elemento por ID e encapsular numa constante
 const inputDoCartao = document.getElementById("cardNumber");
 
-//disparar a função quando o input perder o focus
-inputDoCartao.onblur = function () {
+function capturarInput() {
 
     let numeroDoCartao;
 
@@ -22,7 +21,6 @@ inputDoCartao.onblur = function () {
         alert("Este campo precisa ter 16 números");
     };
 
-    // conferir se a variável recebeu o value
     console.log(numeroDoCartao);
 
     // numeroDoCartao é um String
@@ -30,17 +28,10 @@ inputDoCartao.onblur = function () {
     // mas para o método split é necessário um separador
     // quero inserir um separador(virgula ou espaço) depois de cada elemento da string
 
-    for (let i = 0; i <= 16; i++) {
-
-    }
-
-
+    // for (let i = 0; i <= 16; i++) {
+    // }
 };
 
-
-
-
-
-
-
+//disparar a função quando o input perder o focus
+inputDoCartao.addEventListener("blur", capturarInput);
 
