@@ -227,5 +227,19 @@ footer .footer-container {
 }
 
 #footer-network {
-    border: solid 2px #000;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#footer-network li {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: end;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
