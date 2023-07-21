@@ -23,7 +23,12 @@ const validator = {
     }
 
     result %= 10;
-    return result;
+
+    if (result === 0) {
+      return true;
+    } else {
+      return false;
+    }
   },
 
   maskify: function (creditCardNumber) {

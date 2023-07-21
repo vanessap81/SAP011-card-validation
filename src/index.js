@@ -12,20 +12,10 @@ function isItValid() {
     alert("Este campo deve conter apenas números");
   }
 
-  // let cardNumber;
-  // const re = /\d{13, 16}/;
-
-  // if (cardNumberImput.value.length === 16 && re.test(cardNumberImput.value)) {
-  //     cardNumber = cardNumberImput.value;
-  // } else {
-  //     alert("Este campo deve conter 16 números");
-  // }
-
   validator.isValid(cardNumber);
-  console.log(validator.isValid(cardNumber));
   const isValidResult = validator.isValid(cardNumber);
 
-  if (isValidResult === 0) {
+  if (isValidResult === true) {
     alert("Cartão válido");
   } else {
     alert("Cartão inválido");
@@ -34,8 +24,6 @@ function isItValid() {
 
 function maskifyIt() {
   validator.maskify(cardNumberImput.value);
-  const maskifyResult = validator.maskify(cardNumberImput.value);
-  console.log(maskifyResult);
 }
 
 cardNumberImput.addEventListener("blur", isItValid);
