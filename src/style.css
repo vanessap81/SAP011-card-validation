@@ -73,7 +73,7 @@ nav {
 }
 
 main {
-    height: 740px;
+    height: fit-content;
     margin-top: 50px;
     background-color: #e8d5d5;
 }
@@ -94,7 +94,7 @@ main {
     font-weight: bold;
     color: #A459D1;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #card {
@@ -113,7 +113,7 @@ main {
     justify-content: start;
     flex-direction: column;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-bottom: 30px;
     background-color: #e8d5d5;
     /* box-shadow: 10px 8px 5px #578384; */
 }
