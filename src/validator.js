@@ -24,11 +24,8 @@ const validator = {
       result += parseInt(creditCardValidator[i]);
     }
 
-    if (result % 10 === 0) {
-      return true
-    } else {
-      return false
-    }
+    result %= 10;
+    return result;
   },
 
 

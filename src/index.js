@@ -12,9 +12,11 @@ function isItValid() {
     //     alert("Este campo deve conter 16 números");
     // }
 
-    validator.isValid(cardNumberImput.value)
+    validator.isValid(cardNumberImput.value);
+    console.log(validator.isValid(cardNumberImput.value));
+    const isValidResult = validator.isValid(cardNumberImput.value);
 
-    if (validator === true) {
+    if (isValidResult === 0) {
         alert("Cartão válido")
     } else {
         alert("Cartão inválido")
