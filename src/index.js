@@ -1,24 +1,29 @@
 import validator from './validator.js';
 
-console.log(validator);
+const cardNumberImput = document.getElementById("cardNumber");
 
-const inputDoCartao = document.getElementById("cardNumber");
+function isItValid() {
+    // let cardNumber;
+    // const re = /\d{16}/;
 
-function capturarInput() {
-
-    // let numeroDoCartao;
-    // let re = /\d{16}/;
-
-    // if (inputDoCartao.value.length == 16 && re.test(inputDoCartao.value)) {
-    //     numeroDoCartao = inputDoCartao.value;
-    //     console.log(numeroDoCartao);
+    // if (cardNumberImput.value.length === 16 && re.test(cardNumberImput.value)) {
+    //     cardNumber = cardNumberImput.value;
     // } else {
     //     alert("Este campo deve conter 16 números");
-    // };
+    // }
 
-    validator.isValid(inputDoCartao.value);
-    validator.maskify(inputDoCartao.value);
-};
+    validator.isValid(cardNumberImput.value)
 
-inputDoCartao.addEventListener("blur", capturarInput);
+    if (validator === true) {
+        alert("Cartão válido")
+    } else {
+        alert("Cartão inválido")
+    }
+}
 
+function maskifyIt() {
+    validator.maskify(cardNumberImput.value)
+}
+
+cardNumberImput.addEventListener("blur", isItValid)
+cardNumberImput.addEventListener("blur", maskifyIt)

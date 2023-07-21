@@ -2,26 +2,44 @@ const validator = {
 
   isValid: function (creditCardNumber) {
 
-    let arrayCreditCardV = creditCardNumber.split('');
-    console.log(arrayCreditCardV);
+    for (let i = 0; i < creditCardNumber.length; i++) {
+      parseInt(creditCardNumber[i]);
+    }
 
-    arrayCreditCardV.reverse();
-    console.log(arrayCreditCardV);
+    const creditCardValidator = creditCardNumber.split('');
+    creditCardValidator.reverse();
+
+    for (let i = 1; i < creditCardValidator.length; i += 2) {
+      creditCardValidator[i] *= 2;
+    }
+
+    for (let i = 0; i < creditCardValidator.length; i++) {
+      if (creditCardValidator[i] > 9) {
+        creditCardValidator[i] = creditCardValidator[i] - 9;
+      }
+    }
+
+    let result = 0;
+    for (let i = 0; i < creditCardValidator.length; i++) {
+      result += parseInt(creditCardValidator[i]);
+    }
+
+    if (result % 10 === 0) {
+      return true
+    } else {
+      return false
+    }
   },
 
 
   maskify: function (creditCardNumber) {
 
-    let arrayCreditCard = creditCardNumber.split('');
+    const arrayCreditCard = creditCardNumber.split('');
 
     let i;
-    let quantidade = arrayCreditCard.length;
-
-    for (i = 0; i < quantidade - 4; i++) {
+    for (i = 0; i < arrayCreditCard.length - 4; i++) {
       arrayCreditCard.splice(i, 1, "#")
-    };
-    console.log(arrayCreditCard);
-
+    }
   }
 
 }

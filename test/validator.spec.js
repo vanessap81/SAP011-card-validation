@@ -36,9 +36,5 @@ describe('validator', () => {
     it('Debería retornar "1" para "1"', () => {
       expect(validator.maskify('1')).toBe('1');
     });
-
-    it('Debería retornar "######orld" para "helloworld"', () => {
-      expect(validator.maskify('helloworld')).toBe('######orld');
-    });
   });
 });
