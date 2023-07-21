@@ -1,31 +1,42 @@
-import validator from './validator.js';
+import validator from "./validator.js";
 
 const cardNumberImput = document.getElementById("cardNumber");
 
 function isItValid() {
-    // let cardNumber;
-    // const re = /\d{16}/;
+  let cardNumber;
+  const re = /\d/;
 
-    // if (cardNumberImput.value.length === 16 && re.test(cardNumberImput.value)) {
-    //     cardNumber = cardNumberImput.value;
-    // } else {
-    //     alert("Este campo deve conter 16 números");
-    // }
+  if (re.test(cardNumberImput.value)) {
+    cardNumber = cardNumberImput.value;
+  } else {
+    alert("Este campo deve conter apenas números");
+  }
 
-    validator.isValid(cardNumberImput.value);
-    console.log(validator.isValid(cardNumberImput.value));
-    const isValidResult = validator.isValid(cardNumberImput.value);
+  // let cardNumber;
+  // const re = /\d{13, 16}/;
 
-    if (isValidResult === 0) {
-        alert("Cartão válido")
-    } else {
-        alert("Cartão inválido")
-    }
+  // if (cardNumberImput.value.length === 16 && re.test(cardNumberImput.value)) {
+  //     cardNumber = cardNumberImput.value;
+  // } else {
+  //     alert("Este campo deve conter 16 números");
+  // }
+
+  validator.isValid(cardNumber);
+  console.log(validator.isValid(cardNumber));
+  const isValidResult = validator.isValid(cardNumber);
+
+  if (isValidResult === 0) {
+    alert("Cartão válido");
+  } else {
+    alert("Cartão inválido");
+  }
 }
 
 function maskifyIt() {
-    validator.maskify(cardNumberImput.value)
+  validator.maskify(cardNumberImput.value);
+  const maskifyResult = validator.maskify(cardNumberImput.value);
+  console.log(maskifyResult);
 }
 
-cardNumberImput.addEventListener("blur", isItValid)
-cardNumberImput.addEventListener("blur", maskifyIt)
+cardNumberImput.addEventListener("blur", isItValid);
+cardNumberImput.addEventListener("blur", maskifyIt);

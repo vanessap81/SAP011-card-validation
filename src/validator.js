@@ -1,12 +1,10 @@
 const validator = {
-
   isValid: function (creditCardNumber) {
-
     for (let i = 0; i < creditCardNumber.length; i++) {
       parseInt(creditCardNumber[i]);
     }
 
-    const creditCardValidator = creditCardNumber.split('');
+    const creditCardValidator = creditCardNumber.split("");
     creditCardValidator.reverse();
 
     for (let i = 1; i < creditCardValidator.length; i += 2) {
@@ -28,17 +26,20 @@ const validator = {
     return result;
   },
 
-
   maskify: function (creditCardNumber) {
-
-    const arrayCreditCard = creditCardNumber.split('');
-
-    let i;
-    for (i = 0; i < arrayCreditCard.length - 4; i++) {
-      arrayCreditCard.splice(i, 1, "#")
+    const width = creditCardNumber.length;
+    const quantity = creditCardNumber.length - 4;
+    let maskedResult;
+    if (quantity > 0) {
+      const maskedSubstring = creditCardNumber.substring(0, quantity);
+      const maskedString = maskedSubstring.replace(/\d/g, "#");
+      const unmaskedString = creditCardNumber.substring(width - 4);
+      maskedResult = maskedString + unmaskedString;
+    } else {
+      maskedResult = creditCardNumber;
     }
-  }
-
-}
+    return maskedResult;
+  },
+};
 
 export default validator;
