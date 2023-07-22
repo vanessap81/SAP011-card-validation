@@ -2,7 +2,7 @@
 
 ## Apresentação
 
-Este projeto foi construído dentro da proposta do Projeto 1 do Bootcamp Laboratoria.la. Nesse projeto, a proposta é a da construção de um validador de número de cartão de crédito, a partir da utilização do [Algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
+Este projeto foi construído dentro da proposta do Projeto 1 do Bootcamp Laboratoria.la. Nesse projeto, a proposta é a da construção de um validador de número de cartão de crédito, a partir da utilização do [Algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm) Segundo o algoritmo, um número é considerado válido se, após 4 procedimentos, o resultado for divisível por dez. Os procedimentos são: a) inversão do número; b) multiplicação por dois dos números que ocuparem posições pares; c) soma dos dígidos de dezena e unidade dos resultados maiores que dez; e d) soma de todos os numéros que resultaram das etapas anteriores. 
 
 Os objetivos gerais do projeto compreendiam:
 1. Trabalhar com base em um boilerplate através de módulos em JS;
@@ -58,7 +58,7 @@ O produto atende aos critérios estabelecidos para o resultado do projeto propos
 
   <img src="https://github.com/vanessap81/SAP011-card-validation/assets/87100153/356ee20f-9e39-4b79-8ced-48e13cec34ee" height="300" />
 
-## Objetivos
+## Conclusão
 
 Os objetivos propostos pelo Bootcamp Laboratoria.la foram todos alcançados no decorrer do desenvolvimento do projeto. 
 
@@ -66,3 +66,5 @@ Os objetivos propostos pelo Bootcamp Laboratoria.la foram todos alcançados no d
 2. Conhecer as ferramentas de manutenção e melhoria do código (linters e testes unitários); :white_check_mark:
 3. Aprender sobre objetos, estruturas, métodos e iteração (loops) em JavaScript; :white_check_mark:
 4. Implementar controle de versão com git (e a plataforma github). :white_check_mark:
+
+A resolução do algoritmo de Luhn pode ser vista dentro da função IsValid, que consta no arquivo validator.js . Os procedimentos utilizados para esconder os dígitos do cartão (com exceção dos quatro último) consta na função maskify do mesmo arquivo. 
