@@ -12,7 +12,7 @@ body {
 header {
     width: 1366px;
     height: 50px;
-    background-color: #FFB84C;
+    background-color: #FBC740;
     position: fixed;
     top: 0;
 }
@@ -60,7 +60,7 @@ nav {
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     font-size: 1.2em;
     font-weight: 500;
-    color: #A459D1;
+    color: #E56997;
 }
 
 #links-container li a:hover {
@@ -74,6 +74,7 @@ nav {
 
 main {
     height: fit-content;
+    height: 460px;
     margin-top: 50px;
     background-color: #e8d5d5;
 }
@@ -92,8 +93,8 @@ main {
     font-weight: 500;
     text-transform: uppercase;
     font-weight: bold;
-    color: #A459D1;
-    margin-top: 40px;
+    color: #E56997;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -133,19 +134,38 @@ main {
     margin-bottom: 20px;
 }
 
-#input-container form fieldset .input-div input {
+#input-container form fieldset input {
     width: 260px;
     height: 26px;
     /* border-radius: 5px; */
     box-shadow: none;
 }
 
+#input-container form fieldset #cardContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
 #input-container form fieldset #cardNumberContainer {
     margin-bottom: 0;
+    width: 200px;
+}
+#input-container form fieldset #cardNumberContainer #cardNumberLabel {
+    margin: 0;
+}
+
+#input-container form fieldset #cardNumberContainer #cardNumber {
+    width: 180px;
+    margin-top: 0;
 }
 
 #input-container form fieldset #cardDate-div {
     margin-top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    /* border: solid 1px blue; */
 }
 
 #input-container form fieldset .input-div #cardMonth {
@@ -154,23 +174,24 @@ main {
 }
 
 #input-container form fieldset .input-div #cardYear {
-    width: 60px;
+    width: 40px;
+}
+
+#input-container form fieldset #cardDigit-div {
+    margin-left: 40px;
+    margin-top: 0;
 }
 
 #input-container form fieldset .input-div #cardDigit {
-    width: 60px;
+    width: 40px;
+    margin-top: 0;
 }
 
 /* CONFIGURAÇÃO DA DIV DE AVISO DE CARTÃO VÁLIDO */
-
-/* #input-container form fieldset #cardNumberContainer {
-    margin-bottom: 15px;
-} */
-
 form fieldset #cardInfo {
-    width: 180px;
-    height: 22pxpx;
-    margin: auto;
+    width: 240px;
+    height: 25px;
+    display: flex;
 }
 
 form fieldset #cardInfo p {
@@ -178,16 +199,28 @@ form fieldset #cardInfo p {
     height: 16pxpx;
     font-size: 0.9em;
     margin: 0;
-    margin-top: 5px;
     color: #F5EAEA;
     font-weight: bold;
+}
+
+/* CONFIGURAÇÃO DA DIV DE BANDEIRA */
+form fieldset #cardFlagContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+form fieldset #cardFlag {
+    height: 30px;
+    display: none;
 }
 
 /* BUTTON */
 #input-container form fieldset #button-div {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -200,7 +233,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #A459D1;
+    background-color: #66D2D6;
 }
 
 footer .footer-container {
@@ -222,7 +255,7 @@ footer .footer-container {
     font-family: 'Times New Roman', Times, sans-serif;
     font-size: 0.8em;
     font-weight: 400;
-    color: #fff;
+    color: #000;
 }
 
 #footer-logo {
@@ -248,7 +281,7 @@ footer .footer-container {
     font-family: 'Times New Roman', Times, sans-serif;
     font-size: 0.8em;
     font-weight: 400;
-    color: #fff;
+    color: #000;
     margin-top: 4px;
     margin-bottom: 4px;
 }
