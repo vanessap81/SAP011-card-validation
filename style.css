@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1366px;
+    /* height: 768px; */
+    margin: auto;
+    background-color: #fff;
+}
+
+header {
+    width: 1366px;
+    height: 50px;
+    background-color: #FFB84C;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo-container {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#logo-container img {
+    height: 35px;
+    margin-left: 40px;
+    margin-right: 5px;
+}
+
+#logo-container p a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #F5EAEA;
+}
+
+#links-container {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#links-container li {
+    list-style-type: none;
+}
+
+#links-container li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #A459D1;
+}
+
+#links-container li a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F16767;
+}
+
+main {
+    height: fit-content;
+    margin-top: 50px;
+    background-color: #e8d5d5;
+}
+
+#card-exemple-container {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#card-exemple-container h3 {
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #A459D1;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#card {
+    width: 300px;
+    height: 189px;
+    border-radius: 22px;
+    margin-bottom: 25px;
+    background-color: #f58989;
+    box-shadow: 8px 8px 5px #578384;
+}
+
+#input-container {
+    width: 300px;
+    /* height: 260px; */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: #e8d5d5;
+    /* box-shadow: 10px 8px 5px #578384; */
+}
+
+#input-container form fieldset {
+    border-radius: 10px;
+    background-color: #F5EAEA;
+}
+
+#input-container form fieldset legend {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#input-container form fieldset .input-div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#input-container form fieldset .input-div input {
+    width: 260px;
+    height: 26px;
+    /* border-radius: 5px; */
+    box-shadow: none;
+}
+
+#input-container form fieldset #cardNumberContainer {
+    margin-bottom: 0;
+}
+
+#input-container form fieldset #cardDate-div {
+    margin-top: 0;
+}
+
+#input-container form fieldset .input-div #cardMonth {
+    width: 40px;
+    margin-right: 5px;
+}
+
+#input-container form fieldset .input-div #cardYear {
+    width: 60px;
+}
+
+#input-container form fieldset .input-div #cardDigit {
+    width: 60px;
+}
+
+/* CONFIGURAÇÃO DA DIV DE AVISO DE CARTÃO VÁLIDO */
+
+/* #input-container form fieldset #cardNumberContainer {
+    margin-bottom: 15px;
+} */
+
+form fieldset #cardInfo {
+    width: 180px;
+    height: 22pxpx;
+    margin: auto;
+}
+
+form fieldset #cardInfo p {
+    text-align: center;
+    height: 16pxpx;
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 5px;
+    color: #F5EAEA;
+    font-weight: bold;
+}
+
+/* BUTTON */
+#input-container form fieldset #button-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+fieldset #button-div button {
+    height: 26px;
+}
+
+footer {
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #A459D1;
+}
+
+footer .footer-container {
+    width: 260px;
+    height: 100px;
+}
+
+#footer-links ul {
+    margin-left: 30px;
+}
+
+#footer-links li {
+    list-style-type: none;
+}
+
+#footer-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #fff;
+}
+
+#footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-logo img {
+    height: 40px;
+}
+
+#footer-network {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#footer-network li {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: end;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
