@@ -57,7 +57,7 @@ nav {
 #links-container li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: 500;
     color: #E56997;
@@ -66,7 +66,7 @@ nav {
 #links-container li a:hover {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     color: #F16767;
@@ -88,28 +88,27 @@ main {
 }
 
 #card-exemple-container h3 {
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: 500;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     color: #E56997;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-#card {
+/* #card {
     width: 300px;
     height: 189px;
     border-radius: 22px;
     margin-bottom: 25px;
     background-color: #f58989;
     box-shadow: 8px 8px 5px #578384;
-}
+} */
 
 #input-container {
     width: 300px;
-    /* height: 260px; */
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -121,12 +120,14 @@ main {
 
 #input-container form fieldset {
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F5EAEA;
+    box-shadow: 8px 8px 5px #578384;
 }
 
 #input-container form fieldset legend {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #input-container form fieldset .input-div {
@@ -137,7 +138,6 @@ main {
 #input-container form fieldset input {
     width: 260px;
     height: 26px;
-    /* border-radius: 5px; */
     box-shadow: none;
 }
 
@@ -197,7 +197,7 @@ form fieldset #cardInfo {
 form fieldset #cardInfo p {
     text-align: center;
     height: 16pxpx;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin: 0;
     color: #F5EAEA;
     font-weight: bold;
@@ -252,10 +252,10 @@ footer .footer-container {
 #footer-links li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-    font-weight: 400;
-    color: #000;
+    font-weight: 500;
+    color: #fff;
 }
 
 #footer-logo {
@@ -271,17 +271,14 @@ footer .footer-container {
 #footer-network {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
-#footer-network li {
-    list-style-type: none;
-    text-decoration: none;
-    text-align: end;
-    font-family: 'Times New Roman', Times, sans-serif;
+#footer-network p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     margin-top: 4px;
     margin-bottom: 4px;
 }

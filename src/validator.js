@@ -9,9 +9,6 @@ const validator = {
 
     for (let i = 1; i < creditCardValidator.length; i += 2) {
       creditCardValidator[i] *= 2;
-    }
-
-    for (let i = 0; i < creditCardValidator.length; i++) {
       if (creditCardValidator[i] > 9) {
         creditCardValidator[i] = creditCardValidator[i] - 9;
       }
