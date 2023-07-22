@@ -140,6 +140,14 @@ main {
     box-shadow: none;
 }
 
+#input-container form fieldset #cardNumberContainer {
+    margin-bottom: 0;
+}
+
+#input-container form fieldset #cardDate-div {
+    margin-top: 0;
+}
+
 #input-container form fieldset .input-div #cardMonth {
     width: 40px;
     margin-right: 5px;
@@ -163,15 +171,16 @@ form fieldset #cardInfo {
     width: 180px;
     height: 22pxpx;
     margin: auto;
-    /* border: solid 1px blue; */
 }
 
 form fieldset #cardInfo p {
     text-align: center;
     height: 16pxpx;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 0;
     margin-top: 5px;
+    color: #F5EAEA;
+    font-weight: bold;
 }
 
 /* BUTTON */

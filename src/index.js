@@ -2,6 +2,10 @@ import validator from "./validator.js";
 
 const cardNumberImput = document.getElementById("cardNumber");
 
+const messageIsValid = "Número de cartão válido";
+const messageNotValid = "Número de cartão inválido";
+const message = document.getElementById("message");
+
 function isItValid() {
   let cardNumber;
   const re = /\d/;
@@ -16,14 +20,18 @@ function isItValid() {
   const isValidResult = validator.isValid(cardNumber);
 
   if (isValidResult === true) {
-    alert("Cartão válido");
+    document.getElementById("message").innerHTML = messageIsValid;
+    message.style.color = "green";
   } else {
-    alert("Cartão inválido");
+    document.getElementById("message").innerHTML = messageNotValid;
+    message.style.color = "red";
   }
 }
 
 function maskifyIt() {
   validator.maskify(cardNumberImput.value);
+  const maskedResult = validator.maskify(cardNumberImput.value);
+  cardNumberImput.value = maskedResult;
 }
 
 cardNumberImput.addEventListener("blur", isItValid);
