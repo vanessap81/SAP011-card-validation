@@ -5,10 +5,10 @@
 Este projeto foi construído dentro da proposta do Projeto 1 do Bootcamp Laboratoria.la. 
 
 Os objetivos gerais do projeto compreendiam:
-a) Trabalhar com base em um boilerplate através de módulos em JS;
-b) Conhecer as ferramentas de manutenção e melhoria do código (linters e testes unitários);
-c) Aprender sobre objetos, estruturas, métodos e iteração (loops) em JavaScript;
-d) Implementar controle de versão com git (e a plataforma github).
+1. Trabalhar com base em um boilerplate através de módulos em JS;
+2. Conhecer as ferramentas de manutenção e melhoria do código (linters e testes unitários);
+3. Aprender sobre objetos, estruturas, métodos e iteração (loops) em JavaScript;
+4. Implementar controle de versão com git (e a plataforma github).
 
 Dentre os Critérios de Aceitação Mínimos do Projeto estão: 
 1. Para a interface: permitir ao usuário inserir o número que desejamos validar; usar apenas caracteres numéricos (dígitos) no cartão para validar [0-9]; constatar se o resultado é válido ou não; ocultar todos os dígitos do número do cartão, excetuando os últimos 4 caracteres e não poder inserir um campo vazio. 
