@@ -1,5 +1,7 @@
 # Validação de cartão de crédito - Duckling 
 
+## Apresentação
+
 Este projeto foi construído dentro da proposta do Projeto 1 do Bootcamp Laboratoria.la. 
 
 Os objetivos gerais do projeto compreendiam:
@@ -16,7 +18,7 @@ Dentre os Critérios de Aceitação Mínimos do Projeto estão:
    
 Obs: A exibição da franquia do cartão validado constituiu marco opcional do projeto. 
 
-# Apresentação 
+## Interface
 
 Usuários e processo para definir o produto final quanto à experiência e interface. 
 Quem são os principais usuários do produto
