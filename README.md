@@ -22,7 +22,7 @@ Obs: A exibição da franquia do cartão validado constituiu marco opcional do p
 
 ### Identidade
 A interface contruída foi pensada para ser a área de pagamento com cartão de crédito de uma loja virtual de produtos divertidos para decoração de casa. 
-O tema da loja foi constuído com vistas ao público jovem, sobretudo jovens adultos, afeitos à decoração descontraída de seus locais de estudo, trabalho ou descanso. A paleta escolhida faz uso de cores alegres, que remetem ao verão. O mascote da loja é um patinho de borracha, item de que se tirou a inspiração para o nome da loja (duckling = do inglês, patinho, filhote de pato :duck:).
+O tema da loja foi constuído com foco no público jovem, sobretudo jovens adultos, a quem é comum a decoração descontraída de seus locais de estudo, trabalho ou descanso. A paleta escolhida faz uso de cores alegres, que remetem ao verão. O mascote da loja é um patinho de borracha, item de que se tirou a inspiração para o nome da loja (duckling = do inglês, patinho, filhote de pato :duck:).
 
 <img src="https://github.com/vanessap81/SAP011-card-validation/assets/87100153/37a50f47-db24-4992-9ecc-88a36621e9f0" height="300" />
 
@@ -57,3 +57,12 @@ O produto atende aos critérios estabelecidos para o resultado do projeto propos
    - O código construído passou em todos os testes estabelecidos no arquivo validator.spec.js , que compunha o boilerplate disponibilizado pelo Bootcamp.
 
   <img src="https://github.com/vanessap81/SAP011-card-validation/assets/87100153/356ee20f-9e39-4b79-8ced-48e13cec34ee" height="300" />
+
+## Objetivos
+
+Os objetivos propostos pelo Bootcamp Laboratoria.la foram todos alcançados no decorrer do desenvolvimento do projeto. 
+
+1. Trabalhar com base em um boilerplate através de módulos em JS; :white_check_mark:
+2. Conhecer as ferramentas de manutenção e melhoria do código (linters e testes unitários); :white_check_mark:
+3. Aprender sobre objetos, estruturas, métodos e iteração (loops) em JavaScript; :white_check_mark:
+4. Implementar controle de versão com git (e a plataforma github). :white_check_mark:
