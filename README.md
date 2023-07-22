@@ -20,9 +20,12 @@ Obs: A exibição da franquia do cartão validado constituiu marco opcional do p
 
 ## Interface
 
+A interface contruída foi pensada para ser a área de pagamento com cartão de crédito de uma loja virtual de produtos divertidos para decoração de casa. O tema da loja foi constuído com vistas ao público jovem, sobretudo jovens adultos, afeitos à decoração descontraída de seus locais de estudo, trabalho ou descanso. A paleta escolhida faz uso de cores alegres, que remetem ao verão. O mascote da loja é um patinho de borracha, item de que se tirou a inspiração para o nome da loja.
+
+![Captura de tela 2023-07-22 154424](https://github.com/vanessap81/SAP011-card-validation/assets/87100153/37a50f47-db24-4992-9ecc-88a36621e9f0)
+
 Usuários e processo para definir o produto final quanto à experiência e interface. 
 Quem são os principais usuários do produto
 Quais são os objetivos desses usuários em relação ao seu produto
-Como você acha que o produto que você está criando está resolvendo seus problemas
-Com esses requisitos atendidos, você pode agendar um feedback do projeto com um coach.
+Como você acha que o produto que você está criando está resolvendo seus problemas.
 
