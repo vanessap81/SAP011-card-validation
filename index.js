@@ -28,6 +28,23 @@ function isItValid() {
   }
 }
 
+function changeFlag() {
+  const flag = document.getElementById("cardFlag");
+  const flagNumber = cardNumberImput.value;
+  const flagNumberIndex = flagNumber[0];
+
+  validator.isValid(flagNumber);
+  const isValidFlag = validator.isValid(flagNumber);
+
+  if (flagNumberIndex === "5" && isValidFlag === true) {
+    flag.style.display = "block";
+  }
+  if (flagNumberIndex === "4" && isValidFlag === true) {
+    flag.setAttribute("src", "./img/logo-visa.png");
+    flag.style.display = "block";
+  }
+}
+
 function maskifyIt() {
   validator.maskify(cardNumberImput.value);
   const maskedResult = validator.maskify(cardNumberImput.value);
@@ -35,4 +52,5 @@ function maskifyIt() {
 }
 
 cardNumberImput.addEventListener("blur", isItValid);
+cardNumberImput.addEventListener("blur", changeFlag);
 cardNumberImput.addEventListener("blur", maskifyIt);

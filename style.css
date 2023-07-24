@@ -12,7 +12,7 @@ body {
 header {
     width: 1366px;
     height: 50px;
-    background-color: #FFB84C;
+    background-color: #FBC740;
     position: fixed;
     top: 0;
 }
@@ -57,16 +57,16 @@ nav {
 #links-container li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: 500;
-    color: #A459D1;
+    color: #E56997;
 }
 
 #links-container li a:hover {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     color: #F16767;
@@ -74,6 +74,7 @@ nav {
 
 main {
     height: fit-content;
+    height: 460px;
     margin-top: 50px;
     background-color: #e8d5d5;
 }
@@ -87,28 +88,27 @@ main {
 }
 
 #card-exemple-container h3 {
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: 500;
     text-transform: uppercase;
-    font-weight: bold;
-    color: #A459D1;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    font-weight: 500;
+    color: #E56997;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-#card {
+/* #card {
     width: 300px;
     height: 189px;
     border-radius: 22px;
     margin-bottom: 25px;
     background-color: #f58989;
     box-shadow: 8px 8px 5px #578384;
-}
+} */
 
 #input-container {
     width: 300px;
-    /* height: 260px; */
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -120,12 +120,14 @@ main {
 
 #input-container form fieldset {
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F5EAEA;
+    box-shadow: 8px 8px 5px #578384;
 }
 
 #input-container form fieldset legend {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #input-container form fieldset .input-div {
@@ -133,19 +135,37 @@ main {
     margin-bottom: 20px;
 }
 
-#input-container form fieldset .input-div input {
+#input-container form fieldset input {
     width: 260px;
     height: 26px;
-    /* border-radius: 5px; */
     box-shadow: none;
+}
+
+#input-container form fieldset #cardContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
 
 #input-container form fieldset #cardNumberContainer {
     margin-bottom: 0;
+    width: 200px;
+}
+#input-container form fieldset #cardNumberContainer #cardNumberLabel {
+    margin: 0;
+}
+
+#input-container form fieldset #cardNumberContainer #cardNumber {
+    width: 180px;
+    margin-top: 0;
 }
 
 #input-container form fieldset #cardDate-div {
     margin-top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    /* border: solid 1px blue; */
 }
 
 #input-container form fieldset .input-div #cardMonth {
@@ -154,40 +174,53 @@ main {
 }
 
 #input-container form fieldset .input-div #cardYear {
-    width: 60px;
+    width: 40px;
+}
+
+#input-container form fieldset #cardDigit-div {
+    margin-left: 40px;
+    margin-top: 0;
 }
 
 #input-container form fieldset .input-div #cardDigit {
-    width: 60px;
+    width: 40px;
+    margin-top: 0;
 }
 
 /* CONFIGURAÇÃO DA DIV DE AVISO DE CARTÃO VÁLIDO */
-
-/* #input-container form fieldset #cardNumberContainer {
-    margin-bottom: 15px;
-} */
-
 form fieldset #cardInfo {
-    width: 180px;
-    height: 22pxpx;
-    margin: auto;
+    width: 240px;
+    height: 25px;
+    display: flex;
 }
 
 form fieldset #cardInfo p {
     text-align: center;
     height: 16pxpx;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin: 0;
-    margin-top: 5px;
     color: #F5EAEA;
     font-weight: bold;
+}
+
+/* CONFIGURAÇÃO DA DIV DE BANDEIRA */
+form fieldset #cardFlagContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+form fieldset #cardFlag {
+    height: 30px;
+    display: none;
 }
 
 /* BUTTON */
 #input-container form fieldset #button-div {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -200,7 +233,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #A459D1;
+    background-color: #66D2D6;
 }
 
 footer .footer-container {
@@ -219,9 +252,9 @@ footer .footer-container {
 #footer-links li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -238,14 +271,11 @@ footer .footer-container {
 #footer-network {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
-#footer-network li {
-    list-style-type: none;
-    text-decoration: none;
-    text-align: end;
-    font-family: 'Times New Roman', Times, sans-serif;
+#footer-network p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
     font-weight: 400;
     color: #fff;
