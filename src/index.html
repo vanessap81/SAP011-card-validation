@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="shorcut icon" type="icon" href="./img/duck-logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container" id="logo-container">
+        <img src="./img/duck-logo.png" alt="logo">
+        <p><a href="#home">duckling</a></p>
+      </div>
+      <div class="container" id="nav-container">
+        <ul id="links-container">
+          <li><a href="">home</a></li>
+          <li><a href="">quem somos</a></li>
+          <li><a href="">produtos</a></li>
+          <li><a href="">blog</a></li>
+          <li><a href="">contatos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container" id="card-exemple-container">
+      <h3>Pagamento com cartão de crédito</h3>
+
+      <div class="container" id="input-container">
+        <form action="">
+          <fieldset>
+            <legend>Dados do cartão</legend>
+
+            <div class="input-div">
+              <label for="clientName">Nome do titular do cartão</label>
+              <input type="text" placeholder="Titular do cartão" autocomplete="off" name="name" id="clientName">
+            </div>
+
+            <div class="input-div" id="cardContainer">
+              <div id="cardNumberContainer">
+                <label for="cardNumber">Número do cartão</label>
+                <input type="text" required autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000" name="number" id="cardNumber">
+
+                <div id="cardInfo">
+                  <p id="message">Mensagem</p>
+                </div>
+              </div>
+
+              <div id="cardFlagContainer">
+                <img src="./img/logo-mastercard.png" alt="" id="cardFlag">
+              </div>
+            </div>
+
+            <div class="input-div" id="cardDate-div">
+              <div>
+                <label for="cardDate">Validade</label><br>
+              <input type="text" autocomplete="off" maxlength="2" placeholder="mm" name="month" id="cardMonth" class="cardDate">
+              <input type="text" autocomplete="off" maxlength="4" placeholder="aaaa" name="year" id="cardYear" class="cardDate">
+              </div>
+              <div class="input-div" id="cardDigit-div">
+                <label for="cardDigit">CCV</label><br>
+                <input type="number" autocomplete="off" maxlength="3" name="digit" id="cardDigit">
+              </div>
+            </div>
+
+            <div class="input-div" id="button-div">
+              <button type="submit" id="sendIt">Enviar dados</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container" id="footer-links">
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">quem somos</a></li>
+        <li><a href="">produtos</a></li>
+        <li><a href="">blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-container" id="footer-logo">
+    </div>
+    <div class="footer-container" id="footer-network">
+      <p>Desenvolvido por Vanessa Ponte</p>
+    </div>
+  </footer>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
