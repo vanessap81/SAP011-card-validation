@@ -40,7 +40,7 @@ function changeFlag() {
     flag.style.display = "block";
   }
   if (flagNumberIndex === "4" && isValidFlag === true) {
-    flag.setAttribute("src", "./img/logo-visa.png");
+    flag.setAttribute("src", "./src/img/logo-visa.png");
     flag.style.display = "block";
   }
 }
